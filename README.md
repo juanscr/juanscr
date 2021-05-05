@@ -1,3 +1,5 @@
+<div align="center">
+
 # juanscr
 
 [![](https://img.shields.io/badge/OS-Arch%20Linux-informational?style=flat-square&logo=linux&logoColor=F8F8F2&color=8BE9FD)](https://www.archlinux.org/)
