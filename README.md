@@ -2,7 +2,6 @@
 
 [![](https://img.shields.io/badge/OS-Arch%20Linux-informational?style=flat-square&logo=linux&logoColor=F8F8F2&color=8BE9FD)](https://www.archlinux.org/)
 
-#+BEGIN_COMMENT
 <!--
 **juanscr/juanscr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -17,4 +16,3 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-#+END_COMMENT
