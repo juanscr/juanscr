@@ -1,0 +1,33 @@
+#+TITLE: Source Code Formatting
+
+* SRC Block
+When a =src= block is created inside a header it does not present any problem
+with displaying an extra line.
+#+begin_src
+there is no extra line here
+#+end_src
+
+1. Adding a list adds an extra line because it adds an additional spaces when
+   creating the =src= block.
+   #+begin_src
+there is an extra line here.
+   #+end_src
+2. Removing the spaces at the start of the block, end of the block or both
+   removes this error:
+#+begin_src
+there is no extra line here.
+   #+end_src
+The problem of using this method is that org mode breaks the list and does not
+create more items using =C-RET=, as the indentation is broken. Furthermore it is
+not displayed at the same level as other items of the list.
+
+* Using :
+For =:= it happens similarly.
+: no extra line here.
+
+1. Creating a list and then adding =:=, it happens that:
+   : extra line here
+2. Removing spaces before:
+: extra line not here.
+
+This method also breaks the items list.
