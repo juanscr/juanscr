@@ -1,0 +1,48 @@
+\documentclass[fleqn]{article}
+\input{commands.tex}
+
+%%%%%%%% MARGIN
+\usepackage[left=1in, right=1in, top=0.8in, bottom=0.8in]{geometry}
+
+%%%%%%%% NO PARAGRAPH INDENT
+% https://tex.stackexchange.com/questions/27802/set-noindent-for-entire-file
+\setlength\parindent{0pt}
+
+%%%%%%%% HYPERREF PACKAGE
+\usepackage{hyperref}
+\hypersetup{linkcolor=blue}
+\hypersetup{citecolor=blue}
+\hypersetup{urlcolor=blue}
+\hypersetup{colorlinks=true}
+
+%%%%%%%% CODE RENDERING !!! UNCOMMENT IF NEEDED !!!
+% Compile with flag -shell-escape
+% \usepackage{minted}
+
+%%%%%%%% EXAM PACKAGE
+\usepackage{mathexam}
+
+%%%%%%%% START DOCUMENT
+\ExamClass{SUBJECT}
+\ExamName{EXAM 1}
+\ExamHead{\today}
+
+\let\ds\displaystyle
+
+\begin{document}
+\vspace{0.3cm}
+   % Information of the student
+\begin{itemize}[leftmargin=6.25cm, labelsep=0.5cm]
+
+  \item[\textit{Nombre}] \scalebox{1.2}{Juan Sebastián Cárdenas
+    Rodríguez} % Name
+  \item[\textit{Código}] 201710008101 % Code
+
+\end{itemize}
+\vspace{0.3cm}
+
+% Each of the items to solve
+\begin{enumerate}
+  \item Question.
+\end{enumerate}
+\end{document}

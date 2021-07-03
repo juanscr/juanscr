@@ -1,0 +1,89 @@
+\documentclass[potrait]{a0poster}
+\input{commands.tex}
+\usepackage[hidelinks]{hyperref}
+
+%%%%%%%% MULTI COLUMN OPTIONS
+% https://bit.ly/2SNGoB4
+\setlength\columnsep{3cm}
+
+%%%%%%%% PAPER SIZE
+\usepackage{geometry}
+\geometry{paperwidth=100cm, paperheight=120cm, margin=3cm}
+
+%%%%%%%% COLORS
+\usepackage[svgnames]{xcolor}
+
+%%%%%%%% BIB-LATEX STUFF
+\usepackage[style=authoryear,
+            bibstyle=authoryear,
+            citestyle=authoryear,
+            backend=biber]{biblatex}
+\addbibresource{ref.bib}
+\renewcommand{\bibfont}{\Large}
+
+%%%%%%%% HEADER FOR UNIVERSITY
+\newcommand{\printheader}{
+  \begin{minipage}[ht]{0.21\linewidth}
+    \includegraphics[scale=1.75]{logo.pdf}
+  \end{minipage}\vspace{2.5cm}
+  \begin{minipage}[ht]{0.75\linewidth}
+    \textbf{{\Large Research Practice I} \\
+    {\Large Mathematical Science Department}    \\
+    {\large School of Sciences}\\}
+  \end{minipage}}
+
+%%%%%%%% TITLE COMMAND
+\newcommand{\mytitle}[1]{
+  \begin{center}
+    \textbf{\veryHuge \color{DarkBlue} #1} \\
+    \color{black} \vspace{0.3cm}
+  \end{center}}
+
+%%%%%%%% AUTHOR COMMAND
+\newcommand{\myauthor}[1]{
+  \begin{center}
+    {\huge \textbf{#1}}
+  \end{center}}
+
+%%%%%%%% NOT ENUMERATE SECTION
+% https://bit.ly/3iQ2Lk0
+\setcounter{secnumdepth}{0}
+
+%%%%%%%% FONT SIZES
+% Section font size
+\usepackage{sectsty}
+\sectionfont{\LARGE}
+
+% Subsection font size
+\subsectionfont{\Large}
+
+
+%%%%%%%% TITLE AND AUTHOR
+\title{Title Here}
+\author{Juan Sebastián Cárdenas-Rodríguez \\
+  \textnormal{\scalebox{0.7}{jscardenar@eafit.edu.co} \\
+    \vspace{0.5cm} \scalebox{0.7}{Mathematical Engineering, Universidad
+      EAFIT}}\footnotemark}
+
+%%%%%%%% AUTOMATIC TITLE AND AUTHOR
+% https://latex.org/forum/viewtopic.php?t=12152
+\usepackage{etoolbox}
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\makeatother
+\AtBeginDocument{\printheader
+                 \mytitle{\thetitle}
+                 \myauthor{\theauthor}
+                 \Large \begin{multicols}{2}}
+\AtEndDocument{\end{multicols}}
+
+
+%%%%%%%% START POSTER
+
+\begin{document}
+
+
+%%%%%%%% REFERENCES
+\printbibliography
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{geometry}
+
+%%%%%%%% MARGIN
+\geometry{tmargin=3cm}
+
+%%%%%%%% CHANGED NAME
+\newcommand{\header}{\address}
+
+%%%%%%%% DATE ON HEADER
+\date{}
+
+
+%%%%%%%% START LETTER
+% Information sender
+\renewcommand{\signature}{Your Name Here \\
+  \textit{Cellphone or other} \\
+  \textit{email@domain.com}}
+
+% Signature
+\newcommand{\sig}{\includegraphics
+                   [scale=.1]
+                   {/path/to/your/signature}}
+
+% Header
+\header{Medellín, \today}
+
+% Information receiver
+\newcommand{\infoReceiver}{Director \\
+                           Institution}
+
+\begin{document}
+% Moving closing signatures to the left
+\longindentation=0pt
+
+\begin{letter}{\infoReceiver}
+
+  \opening{Dear person:}
+
+  Write letter here.
+
+  \closing{Yours Faithfully, \\ \vspace{0.6cm}
+           \fromsig{\sig} \\
+           \fromname{\signature}}
+\end{letter}
+\end{document}
