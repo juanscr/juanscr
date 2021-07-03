@@ -1,0 +1,45 @@
+# Exclude executables
+*
+!/**/
+!*.*
+
+# Exclude extensions
+*~
+*#
+.#*
+_*
+*.agdai
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.class
+*.dvi
+.DS_Store
+*.fdb_latexmk
+*.fls
+*.hi
+*.iml
+*.log
+*.nav
+*.o
+*.out
+*.pdf
+*.prv
+*.ps
+*.pyc
+.RData
+.Rhistory
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.tmp.nlogo
+*.vrb
+*.zip
+
+# Exclude folders
+**/.auctex-auto
+**/.idea
+**/.ipynb_checkpoints
+**/.Rproj.user
