@@ -1,10 +1,10 @@
 #+TITLE: Firmeza
 
 | Nombre  | Puntos |
-| Maluma  |     54 |
-| JuanSe  |     52 |
+| Maluma  |     57 |
+| JuanSe  |     55 |
 | Chitiva |     48 |
-| Maya    |     45 |
+| Maya    |     48 |
 | Peñuela |     35 |
 
 * Salidas
@@ -31,6 +31,9 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
 4. 23 - Partido Colombia vs Brasil. Fueron todos menos Peñuela; tomaron pola
    todos. (+3 los que fueron)
 5. 26 - Cumpleaños Pala. Fueron todos menos Peñuela (+5 los que fueron).
+*** Julio
+1. 3 - Partido Colombia vs Uruguay. Fueron Palacio, Maya y JuanSe; tomaron pola
+   todos. (+3 los que fueron)
 ** 2020
 *** Octubre 17
 Primera salida para la tabla. Fueron todos. (+3 todos)
