@@ -2,10 +2,10 @@
 
 | Nombre  | Puntos |
 |---------+--------|
-| Maluma  |     60 |
-| JuanSe  |     58 |
-| Maya    |     51 |
-| Chitiva |     48 |
+| Maluma  |     63 |
+| JuanSe  |     61 |
+| Maya    |     54 |
+| Chitiva |     51 |
 | Peñuela |     37 |
 
 * Salidas
@@ -37,6 +37,8 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
    todos. (+3 los que fueron)
 2. 6 - Partido Colombia vs Argentina. Fueron todos menos Chitiva; tomaron pola todos
    menos Peñuela (+3 los que tomaron pola; +2 Piñu).
+3. 31 - All you can drink, Fugitivo. Fueron todos menos Peñuela; tomaron pola todos. (+3
+   los que fueron)
 ** 2020
 *** Octubre 17
 Primera salida para la tabla. Fueron todos. (+3 todos)
