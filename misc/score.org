@@ -2,9 +2,9 @@
 
 | Nombre  | Puntos |
 |---------+--------|
-| Maluma  |     63 |
-| JuanSe  |     61 |
-| Maya    |     54 |
+| Maluma  |     67 |
+| JuanSe  |     65 |
+| Maya    |     58 |
 | Chitiva |     51 |
 | Peñuela |     37 |
 
@@ -38,6 +38,9 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
 2. 6 - Partido Colombia vs Argentina. Fueron todos menos Chitiva; tomaron pola todos
    menos Peñuela (+3 los que tomaron pola; +2 Piñu).
 3. 31 - All you can drink, Fugitivo. Fueron todos menos Peñuela; tomaron pola todos. (+3
+   los que fueron)
+*** Agosto
+1. 13 - Parche a tomar cerveza. Fueron Palacio, Maya y JuanSe; tomaron pola todos. (+4
    los que fueron)
 ** 2020
 *** Octubre 17
