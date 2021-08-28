@@ -2,10 +2,10 @@
 
 | Nombre  | Puntos |
 |---------+--------|
-| Maluma  |     67 |
-| JuanSe  |     65 |
-| Maya    |     58 |
-| Chitiva |     51 |
+| Maluma  |     75 |
+| JuanSe  |     73 |
+| Maya    |     66 |
+| Chitiva |     59 |
 | Peñuela |     37 |
 
 * Salidas
@@ -42,6 +42,10 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
 *** Agosto
 1. 13 - Parche a tomar cerveza. Fueron Palacio, Maya y JuanSe; tomaron pola todos. (+4
    los que fueron)
+2. 14 - Parche a tomar cerveza a Fugitivo. Fueron Palacio, Maya, JuanSe y Chitiva;
+   tomaron pola todos (+4 los que fueron).
+3. 25 - Parche a tomar cerveza a Fugitivo y a comer. Fueron Palacio, Maya, JuanSe y
+   Chitiva; tomaron pola todos (+4 los que fueron).
 ** 2020
 *** Octubre 17
 Primera salida para la tabla. Fueron todos. (+3 todos)
