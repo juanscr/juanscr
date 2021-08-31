@@ -6,7 +6,7 @@
 | JuanSe  |     73 |
 | Maya    |     66 |
 | Chitiva |     59 |
-| Peñuela |     37 |
+| Peñuela |     40 |
 
 * Salidas
 ** 2021
@@ -43,7 +43,8 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
 1. 13 - Parche a tomar cerveza. Fueron Palacio, Maya y JuanSe; tomaron pola todos. (+4
    los que fueron)
 2. 14 - Parche a tomar cerveza a Fugitivo. Fueron Palacio, Maya, JuanSe y Chitiva;
-   tomaron pola todos (+4 los que fueron).
+   Peñuela nos recogió para ir a Mcdonald's. tomaron pola todos (+4 los que fueron; +3
+   Peñuela).
 3. 25 - Parche a tomar cerveza a Fugitivo y a comer. Fueron Palacio, Maya, JuanSe y
    Chitiva; tomaron pola todos (+4 los que fueron).
 ** 2020
