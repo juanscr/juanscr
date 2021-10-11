@@ -2,11 +2,11 @@
 
 | Nombre  | Puntos |
 |---------+--------|
+| JuanSe  |     85 |
 | Maluma  |     84 |
-| JuanSe  |     82 |
-| Maya    |     75 |
+| Maya    |     78 |
 | Chitiva |     58 |
-| Peñuela |     40 |
+| Peñuela |     43 |
 
 * Salidas
 ** 2021
@@ -53,6 +53,9 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
 2. 17 - Parche a tomar a FoxeyPub. Fueron Palacio, Maya y JuanSe. (+4 los que fueron)
 3. 18 - Parche a hablar y comer a Mcdonald's. Fueron Palacio, Maya y Juanse; Chiti había
    dicho que iba y nunca apareció. (+3 los que fueron; -1 Chitiva)
+*** Octubre
+1. 10 - Partido Colombia vs Brasil. Fueron Peñuela, Maya y JuanSe; tomaron pola todos.
+   (+3 los que fueron)
 
 ** 2020
 *** Octubre 17
