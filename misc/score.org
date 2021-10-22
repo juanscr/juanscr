@@ -37,8 +37,8 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
    todos. (+3 los que fueron)
 2. 6 - Partido Colombia vs Argentina. Fueron todos menos Chitiva; tomaron pola todos
    menos Peñuela (+3 los que tomaron pola; +2 Piñu).
-3. 31 - All you can drink, Fugitivo. Fueron todos menos Peñuela; tomaron pola todos. (+4
-   los que fueron)
+3. 31 - All you can drink, Fugitivo. Fueron todos menos Peñuela; tomaron pola todos.
+   (+4 los que fueron)
 *** Agosto
 1. 13 - Parche a tomar cerveza. Fueron Palacio, Maya y JuanSe; tomaron pola todos. (+4
    los que fueron)
@@ -48,11 +48,11 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
 3. 25 - Parche a tomar cerveza a Fugitivo y a comer. Fueron Palacio, Maya, JuanSe y
    Chitiva; tomaron pola todos (+4 los que fueron).
 *** Septiembre
-1. 5 - Partido Colombia vs Paraguay en la casa de JuanCa. Fueron Palacio, Maya y JuanSe.
-   (+2 los que fueron)
+1. 5 - Partido Colombia vs Paraguay en la casa de JuanCa. Fueron Palacio, Maya y
+   JuanSe. (+2 los que fueron)
 2. 17 - Parche a tomar a FoxeyPub. Fueron Palacio, Maya y JuanSe. (+4 los que fueron)
-3. 18 - Parche a hablar y comer a Mcdonald's. Fueron Palacio, Maya y Juanse; Chiti había
-   dicho que iba y nunca apareció. (+3 los que fueron; -1 Chitiva)
+3. 18 - Parche a hablar y comer a Mcdonald's. Fueron Palacio, Maya y Juanse; Chiti
+   había dicho que iba y nunca apareció. (+3 los que fueron; -1 Chitiva)
 *** Octubre
 1. 10 - Partido Colombia vs Brasil. Fueron Peñuela, Maya y JuanSe; tomaron pola todos.
    (+3 los que fueron)
@@ -61,21 +61,20 @@ Salida a sushi. Fueron Maya, Palacio, Chitiva y JuanSe. (+3 los que fueron)
 *** Octubre 17
 Primera salida para la tabla. Fueron todos. (+3 todos)
 *** Noviembre 13
-Partido Colombia - Uruguay. Luego un partidito real. Fueron Peñuela, Maya,
-   Chitiva y JuanSe. (+2 los que fueron)
+Partido Colombia - Uruguay. Luego un partidito real. Fueron Peñuela, Maya, Chitiva y
+   JuanSe. (+2 los que fueron)
 *** Diciembre
-1. 11 - Salida a parchar, 10 six packs. Fueron Maya, Peñuela, Palacio y JuanSe.
-   (+4 los que fueron)
+1. 11 - Salida a parchar, 10 six packs. Fueron Maya, Peñuela, Palacio y JuanSe. (+4 los
+   que fueron)
 2. 13 - Salida a parchar. Fueron Palacio, Peñuela y JuanSe. (+3 los que fueron)
-3. 30 - Salida a parchar. Fueron Maya, Chitiva, Peñuela y Palacio. (+3 los que
-   fueron)
+3. 30 - Salida a parchar. Fueron Maya, Chitiva, Peñuela y Palacio. (+3 los que fueron)
 
 * Reglas
 ** Información básica
 *Fecha*: 17 de Octubre.
 
-*Salida*: solo cuando mínimo tres del grupo vayan a salir y se diga por el
-grupo. Salida solo presencial.
+*Salida*: solo cuando mínimo tres del grupo vayan a salir y se diga por el grupo.
+Salida solo presencial.
 
 *Requisitos*
 1. Una salida al mes.
