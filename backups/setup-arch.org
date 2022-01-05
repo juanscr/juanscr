@@ -10,16 +10,61 @@ installations to have my functional system this includes:
 - And more! (see the table of contents to see the full changes.)
 
 * Table of Contents :toc:
+- [[#optimus-setup][Optimus Setup]]
 - [[#time-syncing][Time Syncing]]
 - [[#logitech-mouse-customization][Logitech Mouse Customization]]
 - [[#touchpad-configuration][Touchpad Configuration]]
 - [[#hard-drive-configuration][Hard Drive Configuration]]
 
+* Optimus Setup
+The Acer Nitro 5 uses the Nvidia Optimus technology. This allows to have an integrated
+intel graphic cards for low performance and improved battery with an nvidia graphics
+card for higher performance. Although multiple solutions are given from the Arch Wiki
+for managing this, the best solution I could found out of the box is using [[https://github.com/Askannz/optimus-manager][optimus
+manager]].
+
+Using the ~lightdm~ display manager, this configuration pretty much works out of the
+box. Some additional configuration is needed in order to obtain a real battery life
+saving by configuring the power management options, in which the PCI power control one
+was the most successful one. My optimus configuration file looks something like:
+
+#+begin_src
+[intel]
+DRI=3
+accel=
+driver=intel
+modeset=yes
+tearfree=yes
+
+[nvidia]
+DPI=96
+PAT=yes
+allow_external_gpus=no
+dynamic_power_management=no
+ignore_abi=no
+modeset=yes
+options=overclocking
+
+[optimus]
+auto_logout=no
+pci_power_control=yes
+pci_remove=no
+pci_reset=no
+startup_auto_battery_mode=integrated
+startup_auto_extpower_mode=nvidia
+startup_mode=nvidia
+switching=nouveau
+#+end_src
+
+With this setup, additional displays can be used without the need to switching back to
+the nvidia performance card.
+
 * Time Syncing
 For network time syncing, NTP is not suggested as laptops do not have a permanent
 network connection and is really slow for time syncing. Instead use ~chrony~ that is
-specifically designed to combat this issues. The Colombian NTP servers can be seen [[https://www.ntppool.org/zone/co][this
-page]]. Currently, in my =/etc/chrony.conf= I have the following servers:
+specifically designed to combat this issues. The Colombian NTP servers can be seen
+[[https://www.ntppool.org/zone/co][this page]]. Currently, in my =/etc/chrony.conf= I
+have the following servers:
 
 #+begin_src
 server 1.co.pool.ntp.org offline
