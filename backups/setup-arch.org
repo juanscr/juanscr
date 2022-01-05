@@ -10,9 +10,26 @@ installations to have my functional system this includes:
 - And more! (see the table of contents to see the full changes.)
 
 * Table of Contents :toc:
+- [[#time-syncing][Time Syncing]]
 - [[#logitech-mouse-customization][Logitech Mouse Customization]]
 - [[#touchpad-configuration][Touchpad Configuration]]
 - [[#hard-drive-configuration][Hard Drive Configuration]]
+
+* Time Syncing
+For network time syncing, NTP is not suggested as laptops do not have a permanent
+network connection and is really slow for time syncing. Instead use ~chrony~ that is
+specifically designed to combat this issues. The Colombian NTP servers can be seen [[https://www.ntppool.org/zone/co][this
+page]]. Currently, in my =/etc/chrony.conf= I have the following servers:
+
+#+begin_src
+server 1.co.pool.ntp.org offline
+server 0.south-america.pool.ntp.org offline
+server 3.south-america.pool.ntp.org offline
+#+end_src
+
+To activate the servers when I'm connected to a network, I use the following [[https://aur.archlinux.org/packages/networkmanager-dispatcher-chrony/][aur
+package.]] Remember to install the ~chrony~ package and enable ~chronyd.service~;
+additionally, disable and stop ~systemd-timesyncd~ for enabling chrony properly.
 
 * Logitech Mouse Customization
 I have a [[https://www.logitechg.com/en-eu/products/gaming-mice/g300s-gaming-mouse.910-004345.html][Logitech G3000s]] mouse; this mouse has some colors to switch through by
