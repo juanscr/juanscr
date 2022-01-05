@@ -11,6 +11,7 @@ installations to have my functional system this includes:
 
 * Table of Contents :toc:
 - [[#logitech-mouse-customization][Logitech Mouse Customization]]
+- [[#touchpad-configuration][Touchpad Configuration]]
 
 * Logitech Mouse Customization
 I have a [[https://www.logitechg.com/en-eu/products/gaming-mice/g300s-gaming-mouse.910-004345.html][Logitech G3000s]] mouse; this mouse has some colors to switch through by
@@ -23,3 +24,35 @@ color to red and having the two middle buttons to change between tabs use:
 #+begin_src bash
 sudo ratslap --modify F3 --colour red --G8 LeftCtrl+PageUp --G9 LeftCtrl+PageDown --print F3 --select F3
 #+end_src
+
+* Touchpad Configuration
+For configuring the touchpad for a more natural behavior, the ~libinput~ package was
+used as is the currently use package for managing input devices; for making it work in
+Xorg run the following command:
+
+#+begin_src bash
+sudo pacman -S xf86-input-libinput
+#+end_src
+
+And restart the graphical environment so the devices are now managed by libinput. Then, to configure the touchpad for the following features:
+
+- Tapping for left click.
+- Tapping with two fingers for right click.
+- Tapping with three fingers for middle click (paste).
+- Natural scrolling, similar to windows.
+
+Create the file =/etc/X11/xorg.conf.d/30-touchpad.conf= and write:
+
+#+begin_src
+Section "InputClass"
+    Identifier "libinput touchpad catchall"
+    MatchIsTouchpad "on"
+    MatchDevicePath "/dev/input/event*"
+    Driver "libinput"
+    Option "Tapping" "on"
+    Option "ClickMethod" "clickfinger"
+    Option "NaturalScrolling" "true"
+EndSection
+#+end_src
+
+And then restart your computer to reload xorg.
