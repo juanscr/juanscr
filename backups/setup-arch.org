@@ -12,6 +12,7 @@ installations to have my functional system this includes:
 * Table of Contents :toc:
 - [[#logitech-mouse-customization][Logitech Mouse Customization]]
 - [[#touchpad-configuration][Touchpad Configuration]]
+- [[#hard-drive-configuration][Hard Drive Configuration]]
 
 * Logitech Mouse Customization
 I have a [[https://www.logitechg.com/en-eu/products/gaming-mice/g300s-gaming-mouse.910-004345.html][Logitech G3000s]] mouse; this mouse has some colors to switch through by
@@ -56,3 +57,23 @@ EndSection
 #+end_src
 
 And then restart your computer to reload xorg.
+
+* Hard Drive Configuration
+To improving quality of life for hard drives, it is important to prevent spinning down
+issues. The default values normally set can be to aggressive and deteriorate the
+lifespan of a hard drive. For improving this manually, install the ~hdparm~ package and
+do:
+
+#+begin_src bash
+hdparm -B 127 /dev/XXX
+#+end_src
+
+This setting will keep spin down without being two aggressive. To make this setting
+permanent at reboot, create a udev rule. In the file =/etc/udev/rules.d/69-hdparm.rules=
+write the following to automatically the detect the disks to apply the rule:
+
+#+begin_src
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTRS{queue/rotational}=="1", RUN+="/usr/bin/hdparm -B 127 /dev/%k"
+#+end_src
+
+Related page: [[https://wiki.archlinux.org/title/Hdparm#Power_management_configuration][Arch Linux wiki.]]
