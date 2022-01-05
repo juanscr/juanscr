@@ -32,7 +32,7 @@ was the most successful one. My optimus configuration file looks something like:
 [intel]
 DRI=3
 accel=
-driver=intel
+driver=modesetting
 modeset=yes
 tearfree=yes
 
