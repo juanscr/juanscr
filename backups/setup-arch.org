@@ -6,21 +6,18 @@ installations to have my functional system this includes:
 
 - Having an Optimus setup for Nvidia and Intel cards.
 - Controlling brightness controls for Nvidia cards.
-- Creating virtual machines with QEMU with PCIe passthrough.
-- Modifying Ligate hardware color configuration and button setup.
+- Modifying Logitech hardware color configuration and button setup.
 - And more! (see the table of contents to see the full changes.)
 
 * Table of Contents :toc:
-- [[#logitech-customization][Logitech Customization]]
-  -  [[#mouse-customization][Mouse Customization]]
+- [[#logitech-mouse-customization][Logitech Mouse Customization]]
 
-* Logitech Customization
-**  Mouse Customization
+* Logitech Mouse Customization
 I have a [[https://www.logitechg.com/en-eu/products/gaming-mice/g300s-gaming-mouse.910-004345.html][Logitech G3000s]] mouse; this mouse has some colors to switch through by
 default and it can be customized to have different colors. Additionally, it has
 some custom buttons that allow to be customized.
 
-Using the =ratslap= command, the color and buttons can be set. To changing the
+Using the ~ratslap~ command, the color and buttons can be set. To changing the
 color to red and having the two middle buttons to change between tabs use:
 
 #+begin_src bash
