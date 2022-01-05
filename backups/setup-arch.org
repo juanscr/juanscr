@@ -57,7 +57,8 @@ switching=nouveau
 #+end_src
 
 With this setup, additional displays can be used without the need to switching back to
-the nvidia performance card.
+the nvidia performance card. Remember to install ~mesa-utils~ for ~glxinfo~ so it can
+detect the state correctly when it is integrated.
 
 * Time Syncing
 For network time syncing, NTP is not suggested as laptops do not have a permanent
