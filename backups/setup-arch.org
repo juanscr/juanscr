@@ -17,6 +17,7 @@ installations to have my functional system this includes:
 - [[#hard-drive-configuration][Hard Drive Configuration]]
 - [[#keyboard-layout-configuration][Keyboard Layout Configuration]]
 - [[#xdg-base-directory-specification][XDG Base Directory Specification]]
+- [[#qt5-platform][QT5 Platform]]
 
 * Optimus Setup
 The Acer Nitro 5 uses the Nvidia Optimus technology. This allows to have an integrated
@@ -200,4 +201,13 @@ export TEXMFVAR="$XDG_CACHE_HOME"/texlive/texmf-var
 export PYLINTHOME="$XDG_CACHE_HOME"/pylint
 
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+#+end_src
+
+* QT5 Platform
+For configuring the QT5 applications, I use ~qt5ct~ which allows for configuration to
+the platform similar as ~lxapperance~ to the X11 server. In this manner, to configure
+the QT apps ~qt5ct~ write the following file ~/etc/profile.d/qt5_vars.sh~:
+
+#+begin_src
+export QT_QPA_PLATFORMTHEME=qt5ct
 #+end_src
