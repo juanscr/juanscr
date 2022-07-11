@@ -15,6 +15,7 @@ installations to have my functional system this includes:
 - [[#logitech-mouse-customization][Logitech Mouse Customization]]
 - [[#touchpad-configuration][Touchpad Configuration]]
 - [[#hard-drive-configuration][Hard Drive Configuration]]
+- [[#keyboard-layout-configuration][Keyboard Layout Configuration]]
 
 * Optimus Setup
 The Acer Nitro 5 uses the Nvidia Optimus technology. This allows to have an integrated
@@ -140,3 +141,15 @@ ACTION=="add|change", KERNEL=="sd[a-z]", ATTRS{queue/rotational}=="1", RUN+="/us
 #+end_src
 
 Related page: [[https://wiki.archlinux.org/title/Hdparm#Power_management_configuration][Arch Linux wiki.]]
+
+* Keyboard Layout Configuration
+For my personal laptop, I use the following configuration for my keyboard layout:
+- The US keyboard layout as I find the best one for programming.
+- The ~altgr-intl~ variant in order to write in spanish easily and quickly.
+- The Caps Lock and Escape keys are swapped in order for improved VIM-like usage.
+
+For setting this in an Xorg server, use the following command:
+
+#+begin_src
+localectl --no-convert set-x11-keymap us evdev altgr-intl caps:swapescape
+#+end_src
