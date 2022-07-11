@@ -16,6 +16,7 @@ installations to have my functional system this includes:
 - [[#touchpad-configuration][Touchpad Configuration]]
 - [[#hard-drive-configuration][Hard Drive Configuration]]
 - [[#keyboard-layout-configuration][Keyboard Layout Configuration]]
+- [[#xdg-base-directory-specification][XDG Base Directory Specification]]
 
 * Optimus Setup
 The Acer Nitro 5 uses the Nvidia Optimus technology. This allows to have an integrated
@@ -99,7 +100,8 @@ Xorg run the following command:
 sudo pacman -S xf86-input-libinput
 #+end_src
 
-And restart the graphical environment so the devices are now managed by libinput. Then, to configure the touchpad for the following features:
+And restart the graphical environment so the devices are now managed by libinput. Then,
+to configure the touchpad for the following features:
 
 - Tapping for left click.
 - Tapping with two fingers for right click.
@@ -152,4 +154,50 @@ For setting this in an Xorg server, use the following command:
 
 #+begin_src
 localectl --no-convert set-x11-keymap us evdev altgr-intl caps:swapescape
+#+end_src
+
+* XDG Base Directory Specification
+The XDG Base Directory Specification is a directory specification which hopes to protect
+the user home directory from being spammed with multiple unnecessary directories that
+are used to store data and configuration from multiple apps. [[https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html][Read the specification
+here.]]
+
+For complying with the standard, set the following variables in the file
+~/etc/profile.d/xdg_compliance.sh~:
+
+#+begin_src
+export XDG_CONFIG_HOME="$HOME"/.config
+export XDG_CACHE_HOME="$HOME"/.cache
+export XDG_DATA_HOME="$HOME"/.local/share
+#+end_src
+
+Other global variables I set for multiple other apps for complying with the
+specification are:
+
+#+begin_src
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+
+export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
+export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
+
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+
+export ASPELL_CONF="per-conf $XDG_CONFIG_HOME/aspell/aspell.conf;"
+export ASPELL_CONF="${ASPELL_CONF} personal $XDG_CONFIG_HOME/aspell/en.pws;"
+export ASPELL_CONF="${ASPELL_CONF} repl $XDG_CONFIG_HOME/aspell/en.prepl;"
+
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+
+export TEXMFVAR="$XDG_CACHE_HOME"/texlive/texmf-var
+
+export PYLINTHOME="$XDG_CACHE_HOME"/pylint
+
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 #+end_src
