@@ -201,6 +201,9 @@ export TEXMFVAR="$XDG_CACHE_HOME"/texlive/texmf-var
 export PYLINTHOME="$XDG_CACHE_HOME"/pylint
 
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 #+end_src
 
 * QT5 Platform
