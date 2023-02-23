@@ -72,8 +72,8 @@ Remember to install the `chrony` package and enable `chronyd.service`;
 additionally, disable and stop `systemd-timesyncd` for enabling chrony properly.
 
 # Logitech Mouse Customization
-I have a [Logitech G3000s]
-(https://www.logitechg.com/en-eu/products/
+I have a [Logitech G3000s]\
+(https://www.logitechg.com/en-eu/products/\
 gaming-mice/g300s-gaming-mouse.910-004345.html) mouse; this mouse has some colors to
 switch through by default and it can be customized to have different colors.
 Additionally, it has some custom buttons that allow to be customized.
@@ -135,7 +135,7 @@ hdparm -B 127 /dev/XXX
 ```
 
 This setting will keep spin down without being two aggressive. To make this setting
-permanent at reboot, create a udev rule. In the file =/etc/udev/rules.d/69-hdparm.rules=
+permanent at reboot, create a udev rule. In the file `/etc/udev/rules.d/69-hdparm.rules`
 write the following to automatically the detect the disks to apply the rule:
 
 ```
@@ -143,7 +143,7 @@ ACTION=="add|change", KERNEL=="sd[a-z]", ATTRS{queue/rotational}=="1", RUN+="/us
 ```
 
 Related page:
-[Arch Linux wiki.]
+[Arch Linux wiki.]\
 (https://wiki.archlinux.org/title/Hdparm#Power_management_configuration)
 
 # Keyboard Layout Configuration
@@ -162,7 +162,7 @@ localectl --no-convert set-x11-keymap us evdev altgr-intl caps:swapescape
 The XDG Base Directory Specification is a directory specification which hopes to protect
 the user home directory from being spammed with multiple unnecessary directories that
 are used to store data and configuration from multiple apps.
-[Read the specification here.]
+[Read the specification here.]\
 (https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
 
 For complying with the standard, set the following variables in the file
