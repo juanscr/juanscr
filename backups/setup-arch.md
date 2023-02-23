@@ -72,8 +72,7 @@ Remember to install the `chrony` package and enable `chronyd.service`;
 additionally, disable and stop `systemd-timesyncd` for enabling chrony properly.
 
 # Logitech Mouse Customization
-I have a [Logitech G3000s]\
-(https://www.logitechg.com/en-eu/products/\
+I have a [Logitech G3000s](https://www.logitechg.com/en-eu/products/
 gaming-mice/g300s-gaming-mouse.910-004345.html) mouse; this mouse has some colors to
 switch through by default and it can be customized to have different colors.
 Additionally, it has some custom buttons that allow to be customized.
