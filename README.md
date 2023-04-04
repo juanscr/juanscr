@@ -7,6 +7,8 @@
 [![](https://img.shields.io/badge/Work-LCH-informational?style=for-the-badge&logo=googlefit&logoColor=F8F8F2&color=FF5555)](https://lch.co)
 [![](https://img.shields.io/badge/Desktop-Qtile-informational?style=for-the-badge&logo=python&logoColor=F8F8F2&color=50FA7B)](http://www.qtile.org/)
 
+</div>
+
 ```json
 {
     "name": "Juan Sebastián Cárdenas-Rodríguez",
