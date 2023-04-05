@@ -9,7 +9,7 @@
 
 </div>
 
-I'm a Colombian full stack engineer, passionate about *improving the human experience
+I'm a Colombian full stack developer, passionate about *improving the human experience
 and well being* through the usage of computers and technological solutions. Currently,
 in the process of leading and constructing a software development team to create awesome
 software solutions with really high standards and with a focus on improving the every
