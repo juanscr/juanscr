@@ -215,3 +215,9 @@ the QT apps `qt5ct` write the following file `/etc/profile.d/qt5_vars.sh`:
 ```
 export QT_QPA_PLATFORMTHEME=qt5ct
 ```
+
+# Network Performance Tweaks
+```
+net.ipv4.tcp_fastopen=3
+net.core.netdev_max_backlog=1638
+```
