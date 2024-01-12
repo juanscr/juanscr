@@ -30,34 +30,35 @@ const summary = {
             "level": "B2"
         }
     ],
-    programming_languages: [
-        "typescript",
-        "python",
-        "haskell",
-        "bash",
-        "rust",
-        "java",
-        "cobol",
-        "go"
-    ],
-    frameworks: {
-        frontend: ["vuejs", "react", "nuxtjs"],
+    preferred_stack: {
+        frontend: {
+            language: "typescript",
+            libraries: [
+                "nuxt", "tailwindcss", "vue-toastification", "material-icons"
+            ],
+            experience: "2 years"
+        },
         backend: [
-            "express",
-            "fastapi",
-            "axum",
-            "sqlx",
-            "sqalchemy",
-            "typeorm",
-            "sequelize"
-        ]
-    },
-    other_technology: [
-        "graphql",
-        "docker",
-        "bitbucket_pipelines",
-        "postgresql",
-        "redis"
-    ]
+            {
+                language: "rust",
+                libraries: ["axum", "sqlx", "async-graphql", "utoipa", "reqwest"],
+                experience: "2 years"
+            },
+            {
+                language: "python",
+                libraries: [
+                    "fastapi", "sqlalchemy", "aiohttp", "pandas", "numpy"
+                ],
+                experience: "3 years"
+            },
+            {
+                language: "typescript",
+                libraries: ["nuxt", "slonik", "zod"],
+                experience: "1 year"
+            }
+        ],
+        devops: ["docker", "bitbucket_pipelines"],
+        database: ["postgresql", "redis"]
+    }
 }
 ```
