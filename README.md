@@ -49,12 +49,12 @@ const summary = {
                 libraries: [
                     "fastapi", "sqlalchemy", "aiohttp", "pandas", "numpy"
                 ],
-                experience: "3 years"
+                experience: "4 years"
             },
             {
                 language: "typescript",
                 libraries: ["nuxt", "slonik", "zod"],
-                experience: "1 year"
+                experience: "2 year"
             }
         ],
         devops: ["docker", "bitbucket_pipelines"],
