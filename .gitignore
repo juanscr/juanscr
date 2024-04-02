@@ -43,3 +43,6 @@ _*
 **/.idea
 **/.ipynb_checkpoints
 **/.Rproj.user
+
+# Private folder
+private
