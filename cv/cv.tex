@@ -1,0 +1,240 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[tmargin=0.8cm, bmargin=0.8cm, lmargin=0.7cm, rmargin=1cm]{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+
+% Predefined colors
+\usepackage{xcolor}
+\definecolor{bgleftcol}{HTML}{01303f}
+\definecolor{headercolor}{HTML}{02577a}
+\definecolor{iconcolor}{HTML}{02577a}
+
+% URL
+\usepackage{hyperref}
+
+% Do not indent paragraphs
+\setlength{\parindent}{0pt}
+
+%% Two column structure
+\usepackage{paracol}
+\columnratio{0.32}
+\setlength{\columnsep}{0.8cm}
+
+% Background color for left column
+\backgroundcolor{c[0](4pt,4pt)(0.5\columnsep,4pt)}{bgleftcol}
+\backgroundcolor{c[0](10000pt,10000pt)(0.5\columnsep,10000pt)}{bgleftcol}
+
+% Automatically open and end columns
+\AtBeginDocument{
+    \thispagestyle{empty}\begin{paracol}{2}\hbadness5000\color{white}
+}
+\AtEndDocument{\end{paracol}}
+
+% Custom command for separating columns
+\newcommand{\columnbreak}{%
+    \switchcolumn\color{black}\vspace{-1.4cm}
+}
+
+% Section and subsection styles
+\usepackage{titlesec}
+\titleformat{\section}%
+    {\normalfont\huge\bfseries\color{headercolor}}%
+    {\thesection}{1em}{}%
+    [\color{headercolor}{\titlerule[0.8pt]}]
+
+\titleformat{\subsection}%
+    {\normalfont\huge\bfseries\color{headercolor}}%
+    {\thesubsection}{1em}{}%
+    [\color{headercolor}{\titlerule[0.8pt]}\vspace{0.3cm}]
+
+\titleformat{\subsubsection}%
+    {\normalfont\Large\bfseries\color{white}}%
+    {\thesubsubsection}{1em}{}%
+    [\color{white}{\titlerule[0.8pt]}\vspace{0.3cm}]
+
+% Job entry
+\newcommand{\jobentry}[3]{
+    {\Large\bfseries #1}
+    %
+    \vspace{0.1cm} \\
+    %
+    {\bfseries #2}
+    %
+    \vspace{0.1cm} \\
+    %
+    #3
+    %
+    \vspace{0.1cm} \\
+}
+
+% Icons
+\usepackage[fixed]{fontawesome5}
+
+% Sensitive information
+\input{private/private-information.tex}
+\def\myname{Juan Sebastián Cárdenas-Rodríguez}
+
+\pagestyle{empty}
+\begin{document}
+{
+%
+\sloppy
+%
+\subsubsection*{Contact}
+%
+{\Large\faPhone} \myphone \vspace{0.3cm} \\
+%
+{\Large\faAt} \myemail \vspace{0.3cm} \\
+%
+{\Large\faLinkedin}
+\href{https://www.linkedin.com/in/juanscr-fullstack}{juanscr-fullstack}
+\vspace{0.3cm} \\
+%
+{\large\faGithub}  \href{https://github.com/juanscr}{juanscr}
+%
+\subsubsection*{Programming}
+%
+{\Large\faPython} Python \hfill 4+ years \vspace{0.3cm} \\
+%
+{\Large\faRust} Rust \hfill 2+ years \vspace{0.3cm} \\
+%
+{\Large\faJs} Typescript \hfill 2+ years \vspace{0.3cm} \\
+%
+{\Large\faJava} Java \hfill 1+ year
+%
+\subsubsection*{Technology}
+%
+{\Large\faLinux} Linux \hfill 4+ years \vspace{0.3cm} \\
+%
+{\Large\faRust} Docker \hfill 3+ years \vspace{0.3cm} \\
+%
+{\Large\faBitbucket} Pipelines \hfill 3+ years
+%
+\subsubsection*{Languages}
+%
+Spanish \hfill Native \vspace{0.3cm} \\
+%
+English \hfill Advanced
+%
+\subsubsection*{Skills}
+%
+\begin{itemize}[leftmargin=*]
+%
+    \item Frontend development using \texttt{vue}, \texttt{typescript},
+        \texttt{nuxt} and \texttt{tailwindcss}.
+%
+    \item Backend development with \texttt{rust}, \texttt{typescript} or
+        \texttt{python}.
+%
+    \item Planning and leading teams for feature creation using agile
+        methodologies.
+%
+    \item Continuous integration and delivery automation
+%
+    \item Containarized application deployment.
+%
+    \item Team and tech leadership.
+%
+\end{itemize}
+%
+\subsubsection*{Bachelor}
+%
+Mathematical Engineer, Universidad EAFIT. (2017 - 2021)
+%
+}
+%
+\columnbreak
+%
+\section*{\myname}
+%
+\begin{flushright}
+%
+    \Large Full Stack Developer
+%
+\end{flushright}
+
+I am a passionate and hard-working engineer with more than three years of
+experience working on software development projects in companies as tech lead
+and full-stack developer. I believe technology must be created to improve the
+human experience as a whole and, as such, I focus on developing software
+projects that contribute to a better and more connected lifestyle; in that
+sense, I simultaneously deeply care about executing high-quality engineering
+projects and valuable product for the people involved. I have led teams that
+construct better and more maintainable software projects, using razor-edge
+technologies and best coding practices.
+%
+\subsection*{Experience}
+%
+\jobentry{Head of Software Development}{Laboratorio Clínico Hematológico}{2021 -- Today}
+%
+Laboratorio Clínico Hematológico (LCH) is a distinguished clinical laboratory
+in Medellín. In the 90s, LCH developed an in-house COBOL system to handle the
+information flow in the laboratory and has maintained it since. Nowadays, they
+are looking to migrate from the deprecated COBOL system and create a
+high-performing software development team to create quality Laboratory
+Information Systems (LIS).
+%
+\vspace{0.3cm} \\
+%
+\begin{tabular}{l m{11.5cm}}
+%
+    {\large\color{iconcolor}\faServer} & Created and maintained a microservice
+    architecture in self hosted infrastructure with containerization technology
+    (\texttt{docker}), load balancers (\texttt{nginx}) and virtual machines
+    with \texttt{linux}. \vspace{0.1cm} \\
+%
+    {\large\color{iconcolor}\faHome} & Constructed a team from the ground up
+    and lead them to create high quality products using agile methodologies.
+    \vspace{0.1cm} \\
+%
+    {\large\color{iconcolor}\faFlask} & Created full stack software using
+    \texttt{python}, \texttt{rust} and \texttt{typescript} using frameworks
+    such as \texttt{vue}, \texttt{react}, \texttt{flask}, \texttt{axum} and
+    \texttt{nuxtjs}.
+%
+\end{tabular}
+
+\vspace{0.3cm}
+
+\jobentry{Software Developer}{FinCrime Dynamics}{2020 -- 2021 and 2022 -- Today}
+%
+FinCrime Dynamics (FCD) is a startup that provides the Synthetizor soft-
+ware, which creates automatic high-quality synthetic data for bank transac-
+tional data in order to create realistic testing data for tuning fraud detection
+controls in financial institutions
+%
+\vspace{0.5cm} \\
+%
+\begin{tabular}{l m{11.5cm}}
+%
+    {\large\color{iconcolor}\faNetworkWired} & Created the data analytics
+    backends for modelling and simulating the synthetic data using agent-based
+    simulation. \vspace{0.1cm} \\
+%
+    {\large\color{iconcolor}\faFlask} & Create and mantain resilient APIs with
+    \texttt{python}, \texttt{numpy}, \texttt{flask}, \texttt{pandas} and
+    \texttt{dask}.
+%
+\end{tabular}
+
+\vspace{0.5cm}
+
+\jobentry{Software Developer}{Universidad EAFIT}{2020}
+%
+\begin{tabular}{l m{11.5cm}}
+%
+    {\large\color{iconcolor}\faProjectDiagram} & Part of team creating
+    simulation model of COVID-19 disease spread through the city of Medellín.
+    \vspace{0.1cm} \\
+%
+    {\large\color{iconcolor}\faFlask} & Maintained and created agent-based
+    simulation codebases in \texttt{repast}, \texttt{java} and \texttt{c++}.
+%
+\end{tabular}
+%
+\begin{flushright}
+    \tiny I use Arch btw.
+\end{flushright}
+
+\end{document}
