@@ -4,7 +4,7 @@
 
 [![](https://img.shields.io/badge/OS-Arch%20Linux-informational?style=for-the-badge&logo=linux&logoColor=F8F8F2&color=8BE9FD)](https://www.archlinux.org/)
 ![](https://img.shields.io/badge/Work-Software%20Engineer-informational?style=for-the-badge&logoColor=F8F8F2&color=F1FA8C&logo=gnometerminal)
-[![](https://img.shields.io/badge/Work-Microsoft-informational?style=for-the-badge&logo=microsoft&logoColor=F8F8F2&color=CF3C19)](https://lch.co)
+[![](https://img.shields.io/badge/Work-Microsoft-informational?style=for-the-badge&logo=sonarcloud&logoColor=F8F8F2&color=CF3C19)](https://lch.co)
 [![](https://img.shields.io/badge/Desktop-Hyprland-informational?style=for-the-badge&logo=hyprland&logoColor=F8F8F2&color=50FA7B)](http://www.qtile.org/)
 
 </div>
