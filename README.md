@@ -33,6 +33,7 @@ Here are some of my notable open-source projects:
 - **[dracula/spotify-tui](https://github.com/dracula/spotify-tui)** - Dracula theme for Spotify terminal user interface.
 - **[Microsoft Teams Library JS](https://github.com/OfficeDev/microsoft-teams-library-js)** - Active contributor for runtime SDK for apps to communicate with Host in M365 platform.
 
+## 📚 Summary
 ```javascript
 const summary = {
   name: "Juan Sebastián Cárdenas-Rodríguez",
