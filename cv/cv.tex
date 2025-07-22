@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[tmargin=0.8cm, bmargin=0.8cm, lmargin=0.7cm, rmargin=1cm]{geometry}
+\usepackage[tmargin=1cm, bmargin=1cm, lmargin=2cm, rmargin=2cm]{geometry}
 \usepackage{array}
 \usepackage{enumitem}
 
@@ -9,63 +9,59 @@
 \definecolor{bgleftcol}{HTML}{01303f}
 \definecolor{headercolor}{HTML}{02577a}
 \definecolor{iconcolor}{HTML}{02577a}
+\definecolor{lightbg}{HTML}{f8f9fa}
 
 % URL
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=headercolor,
+    urlcolor=headercolor,
+    citecolor=headercolor
+}
 
 % Do not indent paragraphs
 \setlength{\parindent}{0pt}
-
-%% Two column structure
-\usepackage{paracol}
-\columnratio{0.32}
-\setlength{\columnsep}{0.8cm}
-
-% Background color for left column
-\backgroundcolor{c[0](4pt,4pt)(0.5\columnsep,4pt)}{bgleftcol}
-\backgroundcolor{c[0](10000pt,10000pt)(0.5\columnsep,10000pt)}{bgleftcol}
-
-% Automatically open and end columns
-\AtBeginDocument{
-    \thispagestyle{empty}\begin{paracol}{2}\hbadness5000\color{white}
-}
-\AtEndDocument{\end{paracol}}
-
-% Custom command for separating columns
-\newcommand{\columnbreak}{%
-    \switchcolumn\color{black}\vspace{-1.4cm}
-}
 
 % Section and subsection styles
 \usepackage{titlesec}
 \titleformat{\section}%
     {\normalfont\huge\bfseries\color{headercolor}}%
     {\thesection}{1em}{}%
-    [\color{headercolor}{\titlerule[0.8pt]}]
-
-\titleformat{\subsection}%
-    {\normalfont\huge\bfseries\color{headercolor}}%
-    {\thesubsection}{1em}{}%
     [\color{headercolor}{\titlerule[0.8pt]}\vspace{0.3cm}]
 
+\titleformat{\subsection}%
+    {\normalfont\Large\bfseries\color{headercolor}}%
+    {\thesubsection}{1em}{}%
+    [\color{headercolor}{\titlerule[0.5pt]}\vspace{0.2cm}]
+
 \titleformat{\subsubsection}%
-    {\normalfont\Large\bfseries\color{white}}%
+    {\normalfont\large\bfseries\color{headercolor}}%
     {\thesubsubsection}{1em}{}%
-    [\color{white}{\titlerule[0.8pt]}\vspace{0.3cm}]
 
 % Job entry
 \newcommand{\jobentry}[3]{
     {\Large\bfseries #1}
     %
-    \vspace{0.1cm} \\
+    \hfill
     %
-    {\bfseries #2}
+    #2
     %
-    \vspace{0.1cm} \\
-    %
-    #3
-    %
-    \vspace{0.1cm} \\
+    \vspace{0.2cm} \\
+}
+
+\newcommand{\projectentry}[2]{
+    {\large\bfseries #1 \hfill #2} \\ \vspace{-0.5cm}
+}
+
+% Skill entry for inline skills
+\newcommand{\skillentry}[2]{
+    {\large\color{iconcolor}#1} #2 \quad
+}
+
+% Contact info command
+\newcommand{\contactinfo}[2]{
+    {\large\color{iconcolor}#1} #2 \quad
 }
 
 % Icons
@@ -77,84 +73,28 @@
 
 \pagestyle{empty}
 \begin{document}
-{
-%
-\sloppy
-%
-\subsubsection*{Contact}
-%
-{\Large\faPhone} \myphone \vspace{0.3cm} \\
-%
-{\Large\faHome} \myhome \vspace{0.3cm} \\
-%
-{\Large\faAt} \myemail \vspace{0.3cm} \\
-%
-{\Large\faLinkedin}
-\href{https://www.linkedin.com/in/juanscr-fullstack}{juanscr-fullstack}
-\vspace{0.3cm} \\
-%
-{\large\faGithub}  \href{https://github.com/juanscr}{juanscr}
-%
-\subsubsection*{Programming}
-%
-{\Large\faPython} Python \hfill 4+ years \vspace{0.3cm} \\
-%
-{\Large\faRust} Rust \hfill 2+ years \vspace{0.3cm} \\
-%
-{\Large\faJs} Typescript \hfill 2+ years \vspace{0.3cm} \\
-%
-{\Large\faJava} Java \hfill 1+ year
-%
-\subsubsection*{Technology}
-%
-{\Large\faLinux} Linux \hfill 4+ years \vspace{0.3cm} \\
-%
-{\Large\faDocker} Docker \hfill 3+ years \vspace{0.3cm} \\
-%
-{\Large\faBitbucket} Pipelines \hfill 3+ years
-%
-\subsubsection*{Languages}
-%
-Spanish \hfill Native \vspace{0.3cm} \\
-%
-English \hfill Advanced
-%
-\subsubsection*{Skills}
-%
-\begin{itemize}[leftmargin=*]
-%
-    \item Frontend development using \texttt{vue}, \texttt{typescript},
-        \texttt{nuxt} and \texttt{tailwindcss}.
-%
-    \item Backend development with \texttt{rust}, \texttt{typescript} or
-        \texttt{python}.
-%
-    \item Planning and leading teams for feature creation using agile
-        methodologies.
-%
-    \item Continuous integration and delivery automation.
-%
-    \item Team and tech leadership.
-%
-\end{itemize}
-%
-\subsubsection*{Bachelor}
-%
-Mathematical Engineer, Universidad EAFIT. (2017 - 2021)
-%
-}
-%
-\columnbreak
-%
-\section*{\myname}
-%
-\begin{flushright}
-%
-    \Large Full Stack Developer
-%
-\end{flushright}
 
-I am a dedicated engineer with over three years of experience in software
+% Header section
+\begin{center}
+    {\Huge\bfseries\color{headercolor}\myname}
+
+    \vspace{0.3cm}
+
+    {\Large Senior Full Stack Developer}
+
+    \vspace{0.5cm}
+
+    % Contact information in a single line
+    \contactinfo{\faPhone}{\myphone}
+    \contactinfo{\faAt}{\myemail}
+    \contactinfo{\faGithub}{\href{https://github.com/juanscr}{juanscr}}
+    {\large\color{iconcolor}\faHome} \myhome
+\end{center}
+
+% Professional summary
+\colorbox{lightbg}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+\vspace{0.3cm}
+I am a senior engineer with over four years of experience in software
 development, serving in roles such as tech lead and full-stack developer.
 Throughout my career, I've been head of projects focusing on improving the
 human experience through technology. Whether improving efficiency, enhancing
@@ -162,79 +102,165 @@ connectivity, or delivering valuable products, I prioritize executing
 high-quality engineering projects that make a tangible difference. I take pride
 in leading teams to construct maintainable software using cutting-edge
 technologies and best coding practices.
-%
-\subsection*{Experience}
-%
-\jobentry{Head of Software Development}{Laboratorio Clínico Hematológico}{2021
--- Today}
-%
-Laboratorio Clínico Hematológico (LCH) is a distinguished clinical laboratory
-in Medellín. In the 90s, LCH developed an in-house COBOL system to handle the
-information flow in the laboratory and has maintained it since. Nowadays, they
-are looking to migrate from the deprecated COBOL system and create a
-high-performing software development team to create quality Laboratory
-Information Systems (LIS).
-%
-\vspace{0.3cm} \\
-%
-\begin{tabular}{l m{11.5cm}}
-%
-    {\large\color{iconcolor}\faServer} & Created and maintained a microservice
-    architecture in self hosted infrastructure with containerization technology
-    (\texttt{docker}), load balancers (\texttt{nginx}) and virtual machines
-    with \texttt{linux}. \vspace{0.1cm} \\
-%
-    {\large\color{iconcolor}\faHome} & Constructed a team from the ground up
-    and lead them to create high quality products using agile methodologies.
-    \vspace{0.1cm} \\
-%
-    {\large\color{iconcolor}\faFlask} & Created full stack software using
-    \texttt{python}, \texttt{rust} and \texttt{typescript} using frameworks
-    such as \texttt{vue}, \texttt{react}, \texttt{flask}, \texttt{axum} and
-    \texttt{nuxtjs}.
-%
-\end{tabular}
-
 \vspace{0.3cm}
+}}
 
-\jobentry{Software Developer}{FinCrime Dynamics}{2020 -- 2021 and 2022 -- Today}
-%
-FinCrime Dynamics (FCD) is a startup that provides the Synthetizor soft-
-ware, which creates automatic high-quality synthetic data for bank transac-
-tional data in order to create realistic testing data for tuning fraud detection
-controls in financial institutions
-%
-\vspace{0.5cm} \\
-%
-\begin{tabular}{l m{11.5cm}}
-%
-    {\large\color{iconcolor}\faNetworkWired} & Created the data analytics
-    backends for modelling and simulating the synthetic data using agent-based
-    simulation. \vspace{0.1cm} \\
-%
-    {\large\color{iconcolor}\faFlask} & Create and mantain resilient APIs with
-    \texttt{python}, \texttt{numpy}, \texttt{flask}, \texttt{pandas} and
-    \texttt{dask}.
-%
+\section*{Recent Experience}
+
+\jobentry{Software Engineer II at Microsoft}{July, 2024 -- Today}
+
+\begin{tabular}{l m{15.7cm}}
+    {\large\color{iconcolor}\faReact} & Became an informal leader in React
+    frontend development, solving complex issues like memory leaks and infinite
+    rendering scenarios. \\[0.5cm]
+
+    {\large\color{iconcolor}\faServer} & Maintained and developed SDKs for Web
+    and Mobile platforms using \texttt{typescript} and \texttt{kotlin},
+    enabling application hosting across multiple environments. \\[0.5cm]
+
+    {\large\color{iconcolor}\faRobot} & Collaborated with BizChat (Copilot)
+    team by supporting left rail frontend development and maintaining MetaOS
+    code features for AI chat integration.\\[0.5cm]
+
+    {\large\color{iconcolor}\faTools} & Led technical solutions for critical
+    frontend challenges, establishing best practices and mentoring team members
+    on React optimization techniques.
 \end{tabular}
 
 \vspace{0.5cm}
 
-\jobentry{Software Developer}{Universidad EAFIT}{2020}
+\jobentry{Head of Software Development at LCH}{2021 -- 2024}
+
+In the 90s, Laboratorio Clínico Hematológico developed an in-house COBOL system
+to handle the information flow in the laboratory and needed a technical
+migration to a more up to date stack.
+
+\vspace{0.3cm}
+
+\begin{tabular}{l m{15.7cm}}
+    {\large\color{iconcolor}\faServer} & Created and maintained a microservice
+    architecture in self hosted infrastructure with containerization technology
+    (\texttt{docker}), load balancers (\texttt{nginx}) and virtual machines
+    with \texttt{linux}. \\[0.5cm]
+
+    {\large\color{iconcolor}\faHome} & Constructed a team from the ground up
+    and lead them to create high quality products using agile methodologies.
+    \\[0.5cm]
+
+    {\large\color{iconcolor}\faFlask} & Created full stack software using
+    \texttt{python}, \texttt{rust} and \texttt{typescript} using frameworks
+    such as \texttt{vue}, \texttt{react}, \texttt{flask}, \texttt{axum} and
+    \texttt{nuxtjs}.
+\end{tabular}
+
+\vspace{0.5cm}
+
+\jobentry{Founding Engineer at Ember AI}{April, 2024 - July, 2024}
+
+Ember AI transforms the world of cryptocurrency by making it as simple as
+texting a friend.
+
+\vspace{0.3cm}
+
+\begin{tabular}{l m{15.7cm}}
+    {\large\color{iconcolor}\faServer} & Established a reliable continuous
+    integration and delivery pipeline using \texttt{Docker}, Github Actions and
+    \texttt{Linux}, ensuring rapid and reliable product deployment. \\[0.5cm]
+
+    {\large\color{iconcolor}\faBuilding} & Created type-safe and reliable
+    event-driven APIs using \texttt{typescript} and \texttt{python}, along with
+    frontends in \texttt{react} that interacted with smart contracts. \\[0.5cm]
+
+    {\large\color{iconcolor}\faRobot} & Developed backend services integrating
+    LLM models for multi-agent communication systems, enabling intelligent
+    resolution of user DeFi needs through automated agent coordination.
+\end{tabular}
+
+\begin{flushright}
 %
-\begin{tabular}{l m{11.5cm}}
+    \small Full work history available at
+    \href{https://www.linkedin.com/in/juanscr-fullstack}{\faLinkedin juanscr-fullstack}
+    %
+    \end{flushright}
+
+\vfill
+\subsection*{Key Projects}
+
+\projectentry{Cauterization Child Proxying Communication}{Microsoft}
+
+\begin{itemize}
+    \item Executed a critical security initiative to remove Teams JS proxying
+    mechanisms, requiring deep understanding of communication modules and
+    refactoring core security components for hosted apps in various hosts.
+
+    \item Reduced child proxying messages by 50\% and created a more secure app
+    ecosystem by eliminating vulnerable patterns. Enhanced authentication
+    systems that previously relied on the deprecated proxying pattern.
+
+    \item Coordinated cross-functional collaboration with project managers for
+    app migration, partnered with partner teams for deprecating this pattern,
+    and aligned with senior team members to establish unified security vision.
+\end{itemize}
+
+\projectentry{DeFi Graph Action Database}{Ember AI}
+
+\begin{itemize}
+    \item Designed and refactored an in-memory graph database for mapping all
+    possible DeFi actions and token transformations, enabling conversion of user
+    intent into executable on-chain actions. This graph structure provided a
+    generalized layer for routing actions across different DeFi protocols.
+
+    \item Created easy-to-use MCP tools for AI coordination, achieving sub-15ms
+    latency for user requests through optimized graph queries and efficient
+    action resolution algorithms.
+
+    \item Added plugin interface for seamless open source contributions,
+    allowing new actions to be integrated into the graph. Optimized data
+    initialization using multicall contracts to batch data retrieval and storage
+    operations.
+\end{itemize}
+
+\projectentry{CobolQL}{LCH}
+
+\begin{itemize}
+    \item Designed and maintained CobolQL, a GraphQL API that exposed
+        proprietary, poorly normalized data from a monolithic Cobol app,
+        enabling external integrations, frontend upgrades, and clearer data
+        access. CobolQL became a central piece of the microservices
+        architecture, abstracting data access into a scalable, unified endpoint.
+
+    \item Solved the core data access bottleneck, unlocking faster development
+        across teams. As such, this API enabled the creation of over 5 Vue apps
+        within 6 months, accelerating frontend delivery and reducing legacy
+        constraints.
+
+    \item Overcame significant performance limitations by optimizing GraphQL
+        resolution. This was done by batching Cobol data responses into single
+        API calls, reducing overhead and avoiding saturation of the legacy
+        system.
+\end{itemize}
+
+\section*{Technical Skills}
 %
-    {\large\color{iconcolor}\faProjectDiagram} & Part of team creating
-    simulation model of COVID-19 disease spread through the city of Medellín.
-    \vspace{0.1cm} \\
+\begin{tabular}{l m{13.2cm}}
 %
-    {\large\color{iconcolor}\faFlask} & Maintained and created agent-based
-    simulation codebases in \texttt{repast}, \texttt{java} and \texttt{c++}.
+{\large\color{iconcolor}\faJs} \textbf{TypeScript} & Frontend (React, Vue) and
+backend (Express, Next.js, Nuxt.js) development \\[0.2cm]
+%
+{\large\color{iconcolor}\faRust} \textbf{Rust} & CLI automation and
+high-performance backend development with Axum \\[0.2cm]
+%
+{\large\color{iconcolor}\faPython} \textbf{Python} & Data analysis and API
+development using FastAPI and Flask \\[0.2cm]
+%
+{\large\color{iconcolor}\faLinux} \textbf{DevOps} & Linux server management and
+app containerization using Docker. Automation pipelines with GitHub Actions and
+Bitbucket pipelines
 %
 \end{tabular}
-%
-\begin{flushright}
-    \tiny I use Arch btw.
-\end{flushright}
+
+\section*{Education}
+
+Mathematical Engineer, Universidad EAFIT. (2017 - 2021)
 
 \end{document}
