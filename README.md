@@ -13,18 +13,9 @@ I'm a Colombian full stack developer, passionate about _improving the human expe
 and well being_ through the usage of computers and technological solutions. Currently,
 working at Microsoft as a Software Engineer. My favorite programming language is Rust, I
 use Arch Linux as my personal laptop OS and love window tilling managers to death (have
-used i3wm, qtile, hyprland, komorebi).
+used i3wm, qtile, hyprland, komorebi, glazewm).
 
-## 🚀 Project Experience
-
-Throughout my career, I've worked on diverse projects spanning multiple domains:
-
-- **🤖 Artificial Intelligence**: Developed AI driven solutions for chat-like experiences and multi-agent interaction.
-- **💰 DeFi & Crypto**: Built client and server tools for interacting with smart contracts and execute blockchain transactions.
-- **🏭 Infrastructure Management**: Designed and maintained full-stack systems from deployment to release for an on-going service for a company. Provided technical support and resolved complex client issues
-- **🌐 Scalable APIs**: Built and maintained high-performance GraphQL and REST APIs with high availability.
-
-## 🌟 Open Source Contributions
+## Open Source Contributions
 
 Here are some of my notable open-source projects:
 
@@ -52,7 +43,6 @@ const summary = {
   ],
   preferred_stack: {
     frontend: {
-      total_experience: "3+ years",
       proficiency: "Senior",
       frameworks: [
         {
@@ -65,8 +55,7 @@ const summary = {
             "fluentui",
             "trpc",
             "drizzle",
-          ],
-          experience: "3+ years",
+          ]
         },
         {
           language: "typescript",
@@ -77,8 +66,7 @@ const summary = {
             "vue-toastification",
             "material-icons",
             "shadcn/vue",
-          ],
-          experience: "2+ years",
+          ]
         },
       ],
     },
@@ -86,21 +74,17 @@ const summary = {
       {
         language: "typescript",
         libraries: ["nuxt", "slonik", "zod", "express"],
-        experience: "4 year",
       },
       {
         language: "rust",
         libraries: ["axum", "sqlx", "async-graphql", "utoipa", "reqwest"],
-        experience: "2 years",
       },
       {
         language: "python",
         libraries: ["fastapi", "sqlalchemy", "aiohttp", "pandas", "numpy"],
-        experience: "4 years",
       },
     ],
-    devops: ["docker", "bitbucket_pipelines", "github_actions", "linux"],
-    database: ["postgresql", "redis"],
+    devops: ["docker", "bitbucket_pipelines", "github_actions", "linux"]
   },
 };
 ```
